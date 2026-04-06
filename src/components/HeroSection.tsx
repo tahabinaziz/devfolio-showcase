@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react";
-import devPhoto from "@/assets/dev-taha.jpeg";
+import devPhoto from "@/assets/developer-taha.png";
 
 const HeroSection = () => {
   return (
