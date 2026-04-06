@@ -4,7 +4,7 @@ const Footer = () => (
       <span className="font-mono text-primary">{"<"}</span>
       {" Built with passion "}
       <span className="font-mono text-primary">{"/>"}</span>
-      {" · © " + new Date().getFullYear() + " John Developer"}
+      {" · © " + new Date().getFullYear() + " Taha Developer"}
     </p>
   </footer>
 );

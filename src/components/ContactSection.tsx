@@ -14,8 +14,26 @@ const ContactSection = () => {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  // const handleSubmit = (e: FormEvent) => {
+  //   e.preventDefault();
+  //   const result = contactSchema.safeParse(form);
+  //   if (!result.success) {
+  //     const fieldErrors: Record<string, string> = {};
+  //     result.error.errors.forEach((err) => {
+  //       if (err.path[0]) fieldErrors[err.path[0] as string] = err.message;
+  //     });
+  //     setErrors(fieldErrors);
+  //     return;
+  //   }
+  //   setErrors({});
+  //   setSubmitted(true);
+  //   setForm({ name: "", email: "", message: "" });
+  // };
+
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
     const result = contactSchema.safeParse(form);
     if (!result.success) {
       const fieldErrors: Record<string, string> = {};
@@ -25,9 +43,24 @@ const ContactSection = () => {
       setErrors(fieldErrors);
       return;
     }
-    setErrors({});
-    setSubmitted(true);
-    setForm({ name: "", email: "", message: "" });
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      if (!res.ok) throw new Error("Failed");
+
+      setSubmitted(true);
+      setForm({ name: "", email: "", message: "" });
+      setErrors({});
+    } catch (err) {
+      alert("Something went wrong. Try again.");
+    }
   };
 
   return (
@@ -126,10 +159,10 @@ const ContactSection = () => {
         {/* Social links */}
         <div className="flex justify-center gap-4 mt-12">
           {[
-            { icon: Github, href: "https://github.com", label: "GitHub" },
-            { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-            { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-            { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+            { icon: Github, href: "https://github.com/tahabinaziz", label: "GitHub" },
+            { icon: Linkedin, href: "https://www.linkedin.com/in/tahabin-aziz/", label: "LinkedIn" },
+            // { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+            { icon: Mail, href: "mailto:tahabinaziz.de@gmail.com", label: "Email" },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}

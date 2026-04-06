@@ -4,46 +4,46 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce app with real-time inventory, Stripe payments, and an admin dashboard.",
-    techs: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    github: "https://github.com",
-    live: "https://example.com",
+    title: "Home For Me",
+    description: "Full stack app with search for  apartments, users and an admin dashboard for commercial properties.",
+    techs: ["React", "TypeScript", "Node.js", "Express", "MYSQL", "ORM", "Sequelize", "Websockets", "Tailwind"],
+    github: "https://github.com/tahabinaziz/HomeForme-Frontend",
+    // live: "https://example.com",
   },
   {
-    title: "Task Management App",
-    description: "Kanban-style project management tool with drag-and-drop, real-time collaboration, and analytics.",
-    techs: ["Next.js", "TypeScript", "Prisma", "WebSocket"],
-    github: "https://github.com",
-    live: "https://example.com",
+    title: "Dorat Al-Khaleej",
+    description: "Dorat Al-Khaleej is basically school management system. It consist multiple roles like Owner, Admin, Staff, Student, Parent. It has different modules timetable, biometric attendance system, continuous-assessment, student-progress-tracking.",
+    techs: ["Next.js", "React", "ASP.NET", ".NET Core", "C#", "Entity Framework", "SQL", "Bootstrap"],
+    // github: "https://github.com",
+    live: "https://dak.schoolsmart.org.uk/",
   },
   {
-    title: "AI Chat Interface",
-    description: "Chat application powered by OpenAI with streaming responses, conversation history, and code highlighting.",
-    techs: ["React", "Python", "OpenAI", "Tailwind"],
-    github: "https://github.com",
-    live: "https://example.com",
+    title: "ORITECH",
+    description: "It's a portal for engineers who upload the list of oil & gas measurement and analyze the result on the basis of measurement. This portal is based on file uploads and downloads feature with graphical presentations.",
+    techs: ["HTML", "CSS", "PHP", "Bootstrap", "MySQL"],
+    // github: "https://github.com",
+    live: "https://www.ori-techoils.com/",
   },
   {
-    title: "Analytics Dashboard",
-    description: "Real-time data visualization dashboard with interactive charts, filters, and CSV export.",
-    techs: ["Vue.js", "D3.js", "Node.js", "MongoDB"],
-    github: "https://github.com",
-    live: "https://example.com",
+    title: "THETA Analytics Dashboard",
+    description: "Real-time dashboard (React + WebSockets) visualizing sensor data (temperature, humidity, air quality) for smart-building facility management.",
+    techs: ["Next.js", "React", "D3.js", "Node.js", "PostgreSQL", "Websockets", "Tailwind", "Tanstack Query", "GridStack.js"],
+    // github: "https://github.com",
+    live: "https://rci-dashboard.5micron.berlin/login",
   },
   {
-    title: "Social Media API",
-    description: "RESTful API for a social media platform with auth, rate limiting, and media uploads.",
-    techs: ["Node.js", "Express", "PostgreSQL", "Docker"],
-    github: "https://github.com",
-    live: "",
+    title: "Sensical Dashboard",
+    description: "Scalable Node.js/Bun.js backend with PostgreSQL data pipelines, secure REST API, alerting logic, and analytics — deployed on AWS EC2.",
+    techs: ["Solid.js", "Node.js", "Express", "Bun.js", "Typescript", "PostgreSQL", "Websockets", "Docker", "Kubernetes", "Apache E-chart.js", "Nginx", "EC2"],
+    // github: "https://github.com",
+    live: "https://theta.sensical.de/login",
   },
   {
-    title: "Portfolio Generator",
-    description: "CLI tool that generates beautiful portfolio sites from a JSON config file.",
-    techs: ["TypeScript", "Node.js", "Tailwind", "CLI"],
-    github: "https://github.com",
-    live: "https://example.com",
+    title: "PACC Portal – Academic Administration System",
+    description: "Backend system for student admissions, course management, and fee handling via RESTful APIs, with role- based access control and server - side validation.",
+    techs: ["HTML", "CSS", "TypeScript", "Node.js", "Bootstrap", "MySQL", "Express", "Sequelize"],
+    // github: "https://github.com",
+    live: "https://pacc.edu.pk/prn/",
   },
 ];
 
@@ -74,11 +74,10 @@ const ProjectsSection = () => {
             <button
               key={tech}
               onClick={() => setFilter(tech)}
-              className={`px-3 py-1.5 rounded-full text-xs font-mono transition-colors ${
-                filter === tech
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary text-secondary-foreground hover:bg-primary/10"
-              }`}
+              className={`px-3 py-1.5 rounded-full text-xs font-mono transition-colors ${filter === tech
+                ? "bg-primary text-primary-foreground"
+                : "bg-secondary text-secondary-foreground hover:bg-primary/10"
+                }`}
             >
               {tech}
             </button>

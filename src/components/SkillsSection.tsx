@@ -5,17 +5,22 @@ const skillCategories = [
     title: "Frontend",
     skills: [
       { name: "React / Next.js", level: 95 },
+      { name: "Solid.js", level: 95 },
       { name: "TypeScript", level: 90 },
-      { name: "Tailwind CSS", level: 92 },
-      { name: "Vue.js", level: 75 },
+      { name: "Angular.js", level: 75 },
       { name: "HTML / CSS", level: 95 },
+      { name: "Tailwind CSS", level: 90 },
+      { name: "Bootstrap", level: 90 },
+
     ],
   },
   {
     title: "Backend",
     skills: [
       { name: "Node.js", level: 88 },
-      { name: "Python", level: 82 },
+      { name: "C#/.NET/.NET Core", level: 82 },
+      { name: "SQL", level: 85 },
+      { name: "MYSQL", level: 75 },
       { name: "PostgreSQL", level: 85 },
       { name: "REST / GraphQL", level: 90 },
       { name: "Docker", level: 78 },
@@ -29,6 +34,8 @@ const skillCategories = [
       { name: "AWS / Vercel", level: 78 },
       { name: "Figma", level: 70 },
       { name: "Testing (Jest / Cypress)", level: 82 },
+      { name: "Agile / Scrum", level: 85 },
+      { name: "Problem Solving", level: 90 },
     ],
   },
 ];

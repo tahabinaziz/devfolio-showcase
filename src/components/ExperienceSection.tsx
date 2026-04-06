@@ -3,28 +3,28 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    role: "Senior Frontend Developer",
-    company: "TechCorp Inc.",
-    duration: "Jan 2022 – Present",
-    description: "Led frontend architecture for a SaaS platform serving 50K+ users. Implemented micro-frontend strategy and improved Core Web Vitals by 40%.",
-  },
-  {
     role: "Full Stack Developer",
-    company: "StartupXYZ",
-    duration: "Jun 2020 – Dec 2021",
-    description: "Built and maintained full-stack features using React, Node.js, and PostgreSQL. Shipped real-time collaboration features and payment integrations.",
+    company: "5micron GmbH, DE",
+    duration: "Oct 2023 – Present",
+    description: "Developed and deployed scalable full-stack features using Next.js, React, and TypeScript. Designed and implemented RESTful APIs and backend services using Node.js/Python.",
   },
   {
-    role: "Frontend Developer",
-    company: "DigitalAgency Co.",
+    role: "Frontend Developer (Internship)",
+    company: "KiVVON Media GmbH, DE",
+    duration: "March 2023 – August 2023",
+    description: "Developed and maintained responsive web applications with Angular, JavaScript, and CSS, focused on clean architecture and excellent user experience. Built Node.js backend services with RESTful APIs and PostgreSQL for internal enterprise applications, ensuring security and data integrity.",
+  },
+  {
+    role: "Full Stack Developer (Working Student)",
+    company: "Global Tech Solutions GmbH, DE",
     duration: "Mar 2019 – May 2020",
-    description: "Developed responsive web applications for enterprise clients. Established component library and design system used across 10+ projects.",
+    description: "Built and maintained responsive web applications using Next.js/React.js, JavaScript, and CSS, focusing on scalability and excellent end-user experience. Developed C# ASP.NET/.NET Core, EF backend services with RESTful APIs and PostgreSQL databases for internal enterprise applications, ensuring data integrity and security.",
   },
   {
-    role: "Junior Developer (Intern)",
-    company: "WebDev Studio",
-    duration: "Sep 2018 – Feb 2019",
-    description: "Assisted in building client websites with HTML, CSS, JavaScript. Learned modern frameworks and agile methodologies.",
+    role: "Backend Software Developer",
+    company: "LinkIT (DKI LLC), PK",
+    duration: "Sep 2018 – Feb 2022",
+    description: "Developed and maintained responsive web applications with Angular, JavaScript, and CSS, focused on clean architecture and excellent user experience. Built and maintained ASP.NET / .NET backend services, implementing business logic, RESTful APIs, and data access layers for internal enterprise applications.",
   },
 ];
 

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react";
-import devPhoto from "@/assets/developer-photo.jpg";
+import devPhoto from "@/assets/dev-taha.jpeg";
 
 const HeroSection = () => {
   return (
@@ -15,7 +15,7 @@ const HeroSection = () => {
         >
           <p className="font-mono text-primary text-sm mb-4">Hi, my name is</p>
           <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight mb-2">
-            John Developer
+            Taha Bin Aziz
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-muted-foreground mb-6">
             I build things for the web<span className="text-primary animate-blink">_</span>
@@ -42,9 +42,9 @@ const HeroSection = () => {
 
           <div className="flex items-center gap-4">
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-              { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+              { icon: Github, href: "https://github.com/tahabinaziz", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/tahabin-aziz/", label: "LinkedIn" },
+              // { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
